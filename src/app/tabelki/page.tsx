@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useUser, useAuth } from '@clerk/nextjs';
 import { collection, deleteField, doc, getFirestore, onSnapshot, setDoc } from 'firebase/firestore';
 import { getAuth, signInWithCustomToken } from 'firebase/auth';
-import { db } from '../../../firebase'; // Adjust the import based on your project structure
+import db  from '../../../firebase'; // Adjust the import based on your project structure
 
 const UserDataPage = () => {
     const { user } = useUser();
